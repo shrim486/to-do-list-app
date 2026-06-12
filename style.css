@@ -6,29 +6,25 @@
 
 body{
     font-family:Arial,sans-serif;
-    background:linear-gradient(135deg,#667eea,#764ba2);
+    background:linear-gradient(
+        135deg,
+        #667eea,
+        #764ba2
+    );
     display:flex;
     justify-content:center;
     align-items:center;
     min-height:100vh;
     transition:0.3s;
-    background: linear-gradient(
-        135deg,
-        #667eea,
-        #764ba2
-
 }
 
 .container{
-    background:white;
     width:500px;
     padding:25px;
+    background:rgba(255,255,255,0.95);
+    backdrop-filter:blur(10px);
     border-radius:20px;
     box-shadow:0 10px 30px rgba(0,0,0,0.3);
-    background: rgba(255,255,255,0.95);
-    backdrop-filter: blur(10px);
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
 
 .top-bar{
@@ -39,7 +35,8 @@ body{
 }
 
 h1{
-    font-size:28px;
+    font-size:32px;
+    font-weight:bold;
 }
 
 .input-box{
@@ -53,6 +50,7 @@ select{
     padding:10px;
     border:1px solid #ccc;
     border-radius:8px;
+    font-size:15px;
 }
 
 input{
@@ -65,10 +63,16 @@ button{
     border-radius:8px;
     cursor:pointer;
     transition:0.3s;
+    font-weight:bold;
 }
 
 button:hover{
     transform:translateY(-2px);
+}
+
+#themeBtn{
+    background:#222;
+    color:white;
 }
 
 #addBtn{
@@ -86,7 +90,7 @@ button:hover{
 .stats{
     display:flex;
     justify-content:space-between;
-    margin-bottom:10px;
+    margin-bottom:15px;
     font-weight:bold;
 }
 
@@ -114,6 +118,7 @@ li:hover{
 
 .task-text{
     cursor:pointer;
+    font-weight:500;
 }
 
 .completed{
@@ -129,17 +134,28 @@ li:hover{
 }
 
 .delete-btn{
-    background:red;
+    background:#ff4d4d;
     color:white;
 }
 
 .dark{
-    background:#1e1e1e;
+    background:linear-gradient(
+        135deg,
+        #141e30,
+        #243b55
+    );
 }
 
 .dark .container{
     background:#2d2d2d;
     color:white;
+}
+
+.dark input,
+.dark select{
+    background:#444;
+    color:white;
+    border:1px solid #666;
 }
 
 .dark li{
@@ -148,4 +164,21 @@ li:hover{
 
 .dark .task-date{
     color:#ccc;
+}
+
+@media(max-width:600px){
+
+    .container{
+        width:90%;
+    }
+
+    .input-box{
+        flex-direction:column;
+    }
+
+    .stats{
+        flex-direction:column;
+        gap:5px;
+    }
+
 }
