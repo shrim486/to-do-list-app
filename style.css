@@ -12,6 +12,11 @@ body{
     align-items:center;
     min-height:100vh;
     transition:0.3s;
+    background: linear-gradient(
+        135deg,
+        #667eea,
+        #764ba2
+
 }
 
 .container{
@@ -20,6 +25,10 @@ body{
     padding:25px;
     border-radius:20px;
     box-shadow:0 10px 30px rgba(0,0,0,0.3);
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
 
 .top-bar{
