@@ -3,26 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-Do List App</title>
-
+    <title>Advanced To-Do List</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div class="container">
 
-        <h1>To-Do List</h1>
+        <div class="top-bar">
+            <h1>📝 To-Do List</h1>
+            <button id="themeBtn">🌙</button>
+        </div>
 
         <div class="input-box">
+
             <input
                 type="text"
                 id="taskInput"
                 placeholder="Enter a task">
 
-            <button id="addBtn">
-                Add
-            </button>
+            <select id="priority">
+                <option value="Low">🟢 Low</option>
+                <option value="Medium">🟡 Medium</option>
+                <option value="High">🔴 High</option>
+            </select>
+
+            <button id="addBtn">Add</button>
+
         </div>
+
+        <div class="stats">
+            <p id="taskCount">Total Tasks: 0</p>
+            <p id="completedCount">Completed: 0</p>
+        </div>
+
+        <button id="clearAll">Clear All</button>
 
         <ul id="taskList"></ul>
 
