@@ -45,6 +45,4 @@ This project was created to practice front-end web development concepts includin
 * Search and filter tasks
 * Progress tracking
 
-## Author
 
-Chim
