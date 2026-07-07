@@ -44,5 +44,8 @@ This project was created to practice front-end web development concepts includin
 * Edit task feature
 * Search and filter tasks
 * Progress tracking
+  
+# ScreenShot of the To-Do-List: 
+<img width="1917" height="922" alt="image" src="https://github.com/user-attachments/assets/90b3e001-5005-45f8-bb3f-09e4b4cdf752" />
 
 
